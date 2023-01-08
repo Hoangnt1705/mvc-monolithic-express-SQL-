@@ -12,8 +12,8 @@
 <body>
   <div id="header" class="header">
     <ul class="MenuTabBar">
-      <li class="subMenu"><a href="http://localhost:3700/adminproduct">Admin Products</a></li>
-      <li class="subMenu"><a href="http://localhost:3700/login">Login</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/router/adminproduct">Admin Products</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/router/login">Login</a></li>
 
     </ul>
   </div>
@@ -29,8 +29,8 @@
         <p><%=  `${element.description.substring(0,60)}...` %></p>
       </div>
       <div class="wrapBtnAddCart">
-        <a href='/api/v1/update-product/<%= element.id %>' class="btnEdit">Edit</a>
-        <!-- <button class="btnAddCart">Thêm vào giỏ hàng</button> -->
+        <a href='/router/api/v1/update-product/<%= element.id %>' class="btnEdit">Edit</a>
+        <button class="btnAddCart">Thêm vào giỏ hàng</button>
       </div>
     </div>
     <%})%>

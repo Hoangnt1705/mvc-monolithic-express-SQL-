@@ -4,7 +4,7 @@ let username = document.getElementById('formPostRegister').username;
 let password = document.getElementById('formPostRegister').password;
 let role = document.getElementById('formPostRegister').role;
 let confirmPassword = document.getElementById('formPostRegister').confirmPassword;
-let API = 'http://localhost:3700/api/v1/user-register';
+let API = 'http://localhost:3700/router/api/v1/user-register';
 console.log(email);
 formPostRegister.addEventListener('submit', e => {
     e.preventDefault();
@@ -28,7 +28,7 @@ let fetchPostRegister = (file) => {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            window.location.href = 'http://localhost:3700/login';
+            window.location.href = 'http://localhost:3700/router/login';
         })
         .catch(err => console.log(err));
 } 

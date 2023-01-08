@@ -3,7 +3,7 @@ var itemInCart = document.getElementsByClassName('itemInCart');
 var toastNoProduct = document.getElementById('toastNoProduct');
 var btnDelete = document.querySelectorAll('.btnDelete');
 var idItems = document.querySelectorAll('.idItems');
-const API = 'http://localhost:3700/api/v1/cart/';
+const API = 'http://localhost:3700/router/api/v1/cart/';
 let cartFunc = () => {
     if (itemInCart.length === 0) {
         toastNoProduct.style.visibility = 'visible';

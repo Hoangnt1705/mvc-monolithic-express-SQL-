@@ -1,5 +1,5 @@
 let btnAddCart = document.querySelectorAll(".btnAddCart");
-let API = 'http://localhost:3700/api/v1/cart-post';
+let API = 'http://localhost:3700/router/api/v1/cart-post';
 let fetchGet = (file) => {
     fetch(file)
         .then(response => response.json())

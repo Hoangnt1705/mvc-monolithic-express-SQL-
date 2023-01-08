@@ -5,7 +5,7 @@ var description = document.getElementById('formFetch').description;
 var formFetch = document.getElementById('formFetch');
 var save = document.getElementById('save');
 var id = document.getElementById('id').innerHTML
-var API = `http://localhost:3700/api/v1/cart/${id}`
+var API = `http://localhost:3700/router/api/v1/cart/${id}`
 console.log(API);
 imageUrll.addEventListener('keyup', e => {
     e.preventDefault();
