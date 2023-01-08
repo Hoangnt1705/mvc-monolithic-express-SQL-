@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="header" class="header">
+    <ul class="MenuTabBar">
+      <li class="subMenu"><a href="http://localhost:3700">Shop</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/products">Product</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/cart">Cart</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/order">Order</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/login">Login</a></li>
+    </ul>
+  </div>
+  <div class="product-items">
+    <% rows.forEach(element => {%>
+    <div class="product-item">
+      <h1 id="id" style="font-weight: bold; font-size: 18px;"><%= element.title %></h1>
+      <img src="<%= element.imageUrl %> " alt="">
+      <div class="product-item-text">
+        <p style="font-weight: 700;font-size:larger;"><span><%= element.price %></span><sup>$</sup></p>
+      </div>
+      <div class="descriptionItem">
+        <p><%=  `${element.description.substring(0,60)}...` %></p>
+      </div>
+      <div class="wrapBtnAddCart">
+        <button id="addItemInCart" class="btnAddCart">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <%})%>
+  </div>
+</body>
+<script src="/index.js"></script>
+
+</html>

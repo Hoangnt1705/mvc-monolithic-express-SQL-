@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    animation: 1.3s fade linear;
+}
+
+.header {
+    background: rgb(148, 17, 17);
+    color: #fff;
+}
+
+.MenuTabBar {
+    display: flex;
+    margin-left: 30px;
+}
+
+.subMenu {
+    margin-left: 50px;
+    list-style: none;
+    font-weight: 700;
+    padding: 25px;
+}
+
+.subMenu:hover {
+    background: #f00;
+    text-decoration: underline;
+    animation: 0.5s slow linear;
+}
+
+.product-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+    font-size: 17.3px;
+    border-radius: 3px;
+    margin: 0px auto 0px;
+}
+
+.product-item {
+    width: 20%;
+    height: 500px;
+    background: #fff;
+    padding: 12px;
+    text-align: center;
+    border: 4px solid #f6f6f6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 35px;
+    margin-top: 30px;
+
+}
+
+img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    height: 180px;
+}
+
+.btnAddCart,
+.btnEdit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border: 1px solid rgb(148, 17, 17);
+    border-radius: 3px;
+    color: rgb(148, 17, 17);
+    cursor: pointer;
+    background: #fff;
+
+}
+.btnEdit {
+    border: none;
+    outline: none;
+    border: 1px solid rgb(148, 17, 17);
+    border-radius: 3px;
+    color: rgb(148, 17, 17);
+    cursor: pointer;
+    background: #fff;
+    font-size: 12px;
+}
+
+.btnAddCart:hover {
+    background: rgb(148, 17, 17);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.btnEdit:hover {
+    background: rgb(148, 17, 17);
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+@keyframes slow {
+    0% {
+        opacity: 0.5;
+        text-decoration: underline;
+    }
+
+    100% {
+        opacity: 1;
+        text-decoration: underline;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        position: absolute;
+        left: -100%;
+    }
+
+    50% {
+        opacity: 0.5;
+        left: -50%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0%;
+
+    }
+}

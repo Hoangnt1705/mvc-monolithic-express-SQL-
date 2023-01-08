@@ -1,0 +1,45 @@
+[
+  {
+    "id": "123245",
+    "title": "Eragon",
+    "imageUrl": "https://subjectifymedia.com/wp-content/uploads/2022/01/inheritance-cycle-review-eragon-books.jpg",
+    "description": "This is a fictional book about a land of fairy tales and dragons!",
+    "price": "19"
+  },
+  {
+    "id": "0.41607315815753076",
+    "title": "Harry Potter",
+    "imageUrl": "https://image.thanhnien.vn/660x370/Uploaded/2022/bzivoxbp/2020_07_23/960x0_gukr.jpg?1",
+    "description": "This is a fictional book about a land of evils and wizzards",
+    "price": "12"
+  },
+  {
+    "id": "321453",
+    "title": "Fantastic Beasts",
+    "imageUrl": "https://talkinpets.com/new/media/k2/items/cache/e50ea347917618304944294820c7b33b_L.jpg",
+    "description": "This is a fictional book about a land of fairy tales and magical beasts!",
+    "price": "10"
+  },
+  {
+    "id": "7445643",
+    "title": "Twilight",
+    "imageUrl": "https://ss-images.saostar.vn/wp700/2019/12/12/6618159/chang-vang-2008-big.jpg",
+    "description": "This is a fictional book about vampires and wereworves!",
+    "price": "17"
+  },
+  {
+    "id": "98545644",
+    "title": "IT chapter 1",
+    "imageUrl": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/31/1501685894-it-pennywise.jpg?resize=480:*",
+    "description": "This is a fictional book about a town haunted by an evil clown",
+    "price": "17"
+  },
+  {
+    "id": "12346332",
+    "title": "Doctor Sleep",
+    "imageUrl": "https://i.ytimg.com/vi/90MNvA5ozcI/maxresdefault.jpg",
+    "description": "This is a horror book about a special doctor with his special ability of dream walking",
+    "price": "17"
+  }
+]
+

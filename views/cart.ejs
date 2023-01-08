@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/cart.css">
+</head>
+
+<body>
+  <div id="header" class="header">
+    <ul class="MenuTabBar">
+      <li class="subMenu"><a href="http://localhost:3700">Shop</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/products">Product</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/cart">Cart</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/order">Order</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/login">Login</a></li>
+    </ul>
+  </div>
+  <div id="toastNoProduct">
+    <h1>No Product In Cart</h1>
+  </div>
+  <div class="wrapCart">
+    <% rows.forEach(element => { %>
+    <% let nameProduct = element.name_product %>
+    <% let quantity = element.quantity %>
+    <% let idItems = element.id_items %>
+    <div id="itemInCart" class="itemInCart">
+      <div style="visibility: hidden" class="idItems"><%= idItems %> </div>
+      <div claas="title">
+        <ul>
+          <li><%= nameProduct %> <span><%= `(${quantity})` %> </span> </li>
+        </ul>
+      </div>
+      <div class="btn">
+        <button id="btnDelete" class="btnDelete">Delete</button>
+      </div>
+    </div>
+    <%})%>
+  </div>
+</body>
+<script src="/cart.js"></script>
+
+</html>

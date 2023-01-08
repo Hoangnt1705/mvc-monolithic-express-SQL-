@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/register.css">
+</head>
+
+<body>
+  <form action="" id="formPostRegister">
+    <div id="header" class="header">
+      <ul class="MenuTabBar">
+        <li class="subMenu"><a href="http://localhost:3700">Shop</a></li>
+        <li class="subMenu"><a href="http://localhost:3700/products">Product</a></li>
+        <li class="subMenu"><a href="http://localhost:3700/cart">Cart</a></li>
+        <li class="subMenu"><a href="http://localhost:3700/order">Order</a></li>
+      <li class="subMenu"><a href="http://localhost:3700/login">Login</a></li>
+        <!-- <li class="subMenu"><a href="http://localhost:3700/adminproduct">Admin Products</a></li>
+        <li class="subMenu"><a href="http://localhost:3700/login">Login</a></li> -->
+      </ul>
+    </div>
+    <div class="container">
+      <div class="wrapUpdate">
+        <!-- <div id="id" style="visibility: hidden"> </div> -->
+        <div>
+            <input hidden style="position: absolute" type="text" id="role" name="role" value="admin">
+        </div>
+        <div class="titleClass">
+          <h3>Email</h3>
+          <input type="email" id="email" name="email" placeholder="email">
+          <div class="titleClass">
+            <h3>Username</h3>
+            <input type="text" id="username" name="username" placeholder="username">
+          </div>
+          <div class="imageUrlClass">
+            <h3>Password</h3>
+            <input type="password" id="password" name="password" placeholder="password">
+          </div>
+          <div class="imageUrlClass">
+            <h3>Comfirm Password</h3>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password">
+          </div>
+          <div>
+            <button class="btnDelete" id="register">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+<script src="/register.js"></script>
+
+</html>

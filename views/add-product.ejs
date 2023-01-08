@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/add-product.css">
+
+</head>
+
+<body>
+  <form action="" id="formFetch">
+    <div id="header" class="header">
+      <ul class="MenuTabBar">
+        
+        <li class="subMenu"><a href="http://localhost:3700/adminproduct">Admin Products</a></li>
+        <li class="subMenu"><a href="http://localhost:3700/login">Login</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="wrapUpdate">
+        <div id="id" style="visibility: hidden"><%= user.id %> </div>
+        <div class="titleClass">
+          <h3>Title</h3>
+          <input type="text" value="<%= user.title %> " id="title" name="title">
+        </div>
+        <div class="imageUrlClass">
+          <h3>ImageUrl</h3>
+          <input type="text" value="<%= user.imageUrl %> " id="imageUrll" name="imageUrll">
+        </div>
+        <div class="titleClass">
+          <h3>Price</h3>
+          <input type="text" value="<%= user.price %>" id="price" name="imageUrl">
+        </div>
+        <div class="titleClass">
+          <h3>Description</h3>
+          <input style="height: 15rem" type="text" value="<%= user.description %> " id="description" name="description">
+        </div>
+        <div>
+          <button class="btnDelete" id="save">Save</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+<script src="/add-product.js"></script>
+
+</html>

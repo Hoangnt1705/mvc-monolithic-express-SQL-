@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    animation: 1.3s fade linear;
+}
+
+.header {
+    background: rgb(148, 17, 17);
+    color: #fff;
+}
+
+.MenuTabBar {
+    display: flex;
+    margin-left: 30px;
+}
+
+.subMenu {
+    margin-left: 50px;
+    list-style: none;
+    font-weight: 700;
+    padding: 25px;
+}
+
+.subMenu:hover {
+    background: #f00;
+    text-decoration: underline;
+    animation: 0.5s slow linear;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.wrapCart {
+    margin: 30px;
+}
+
+@keyframes slow {
+    0% {
+        opacity: 0.5;
+        text-decoration: underline;
+    }
+
+    100% {
+        opacity: 1;
+        text-decoration: underline;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        position: absolute;
+        left: -100%;
+    }
+
+    50% {
+        opacity: 0.5;
+        left: -50%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0%;
+
+    }
+}
